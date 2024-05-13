@@ -1,0 +1,10 @@
+<div class="text-steganography-container">
+  <h2>Text in Image Steganography</h2>
+  <textarea [(ngModel)]="message" rows="3" placeholder="Enter message to encode"></textarea>
+  <button class="encode-button" (click)="encodeText()">Encode Text</button>
+  <button class="decode-button" (click)="decodeText()">Decode Text</button>
+  <div>
+    <canvas #canvas></canvas>
+  </div>
+  <p class="decoded-message">Decoded Message: {{decodedMessage}}</p>
+</div>

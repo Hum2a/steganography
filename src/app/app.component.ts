@@ -1,13 +1,24 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, Input } from '@angular/core';
+import { ImageUploaderComponent } from './image-uploader/image-uploader.component';
+import { ImageSteganographyComponent } from './image-steganography/image-steganography.component';
+import { TextInImageSteganographyComponent } from "./text-in-image-steganography/text-in-image-steganography.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    standalone: true,
+    imports: [ImageUploaderComponent, ImageSteganographyComponent, TextInImageSteganographyComponent]
 })
 export class AppComponent {
-  title = 'steganography';
+  @Input() coverImage!: HTMLImageElement;
+  @Input() secretImage!: HTMLImageElement;
+
+
+  onCoverImageLoaded(img: HTMLImageElement): void {
+    this.coverImage = img;
+  }
+
+  onSecretImageLoaded(img: HTMLImageElement): void {
+    this.secretImage = img;
+  }
 }

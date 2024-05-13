@@ -1,0 +1,44 @@
+.text-steganography-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.text-steganography-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: calc(100% - 20px); /* Subtracting padding */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.encode-button,
+.decode-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.encode-button:hover,
+.decode-button:hover {
+  background-color: #0056b3;
+}
+
+.canvas-container {
+  margin-top: 20px;
+}
+
+.decoded-message {
+  font-size: 18px;
+  margin-top: 20px;
+}

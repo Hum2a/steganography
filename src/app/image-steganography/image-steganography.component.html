@@ -1,0 +1,10 @@
+<div class="steganography-container">
+  <canvas #stegoCanvas *ngIf="coverImage && secretImage"></canvas>
+
+  <div class="steganography-controls">
+    <canvas #stegoCanvas></canvas>
+    <button (click)="encodeImage()">Encode Image</button>
+    <button (click)="decodeImage()">Decode Image</button>
+    <button (click)="saveImage()">Save Image</button>
+  </div>
+</div>

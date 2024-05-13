@@ -1,0 +1,17 @@
+/* image-uploader.component.css */
+.image-uploader {
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-uploader:hover {
+  border-color: #007BFF;
+}
+
+.image-uploader input {
+  width: 100%;
+  margin-top: 5px;
+}

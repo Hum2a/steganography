@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css - Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  /* padding: 20px; */
+  margin: 0;
+  background-color: #f85353;
+  color: #333;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+}
+
+canvas {
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.banner {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+  border-bottom-left-radius: 50% 20px; /* Curved bottom-left corner */
+  border-bottom-right-radius: 50% 20px; /* Curved bottom-right corner */
+}
+
+.banner h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Add some animation */
+.banner h1, .banner p {
+  animation: slideInDown 1s ease;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Make the banner cover the entire width of the screen */
+.banner {
+  width: 100vw;
+}
+
